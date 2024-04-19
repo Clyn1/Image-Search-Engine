@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0; /* Added to remove default padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(images/annie-spratt-v6asLq_dYzw-unsplash.jpg); /* Replace 'your-background-image.jpg' with the URL or path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+button.cool-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.cool-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
